@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lung Cancer Detection</title>
+    <link rel="stylesheet" href="lungg.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lung Cancer Detection System</h1>
+      <p>Your health is our priority.</p>
+    </header>
+    <div class="container">
+      <form id="detection-form" action="insert.php" method="post">
+        <form
+          name="detection-form"
+          class="from-border"
+          method="post"
+          action="https://formspree.io/f/meoavljp"
+        ></form>
+        Enter Your Name<br />
+        <input type="name" id="name" required />
+        <input type="file" id="imageUpload" />
+        <input type="checkbox" id="smoking" /> Smoking<br />
+        <input type="checkbox" id="yellowFingers" /> Yellow Fingers<br />
+        <input type="checkbox" id="allergy" /> Allergy<br />
+        <input type="checkbox" id="alcoholConsuming" /> Alcohol Consuming<br />
+        <input type="checkbox" id="coughing" /> Coughing<br />
+        <input type="checkbox" id="chestPain" /> Chest Pain<br />
+        Enter Your Age<br /><input type="Age" id="Age" required />
+        <button type="submit" required>Submit</button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Lung Cancer Detection. All rights reserved.</p>
+    </footer>
+    <script src="lungg.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background: url("https://img.freepik.com/premium-photo/male-doctor-holding-digital-tablet-medical-healthcare-tech-website-ads-concept-generative-ai_401949-1030.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  animation: fadeInBackground 3s ease-in-out; /* Fade-in animation */
+}
+
+/* Fade-in Background Animation */
+@keyframes fadeInBackground {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Header Styling with Animation */
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgb(58, 188, 239); /* Semi-transparent background */
+  color: white;
+  animation: slideIndown 1.6s ease-out; /* Slide-in animation */
+}
+
+/* Slide-in from the top for the header */
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Heading styles */
+h1 {
+  margin: 0;
+}
+
+/* Form Container Styling */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background:rgb(247, 247, 240); /* Semi-transparent white */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  animation: slideInLeft 1.5s ease-out; /* Slide-in animation from left */
+}
+
+/* Slide-in from the left for the container */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label Styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input & Textarea Styling */
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #0c0114;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Textarea resizing prevention */
+textarea {
+  resize: none;
+}
+
+/* Button Styling */
+button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for button */
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* Result Styling */
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeInResult 2s ease-out; /* Fade-in for result section */
+}
+
+/* Fade-in Animation for Result Section */
+@keyframes fadeInResult {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  background:rgb(58, 188, 239); /* Semi-transparent footer */
+  color: whitesmoke;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  animation: fadeInFooter 2s ease-out; /* Fade-in animation for the footer */
+}
+
+/* Footer Fade-in Animation */
+@keyframes fadeInFooter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
